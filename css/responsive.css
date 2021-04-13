@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 de fev. de 2021, 13:04:16
+    Author     : Admin
+*/
+
+/*lg: 992px*/
+@media (max-width: 992px) {
+
+}
+
+
+@media (max-width: 420px) {
+    /*Auto ajuste do titulo do nav para enquadrar como logo e botão responsivo*/
+    nav p{
+        font-size: calc(62% + 0.1vw);
+    }
+
+}
+
+@media (max-width: 392px) {
+   
+}

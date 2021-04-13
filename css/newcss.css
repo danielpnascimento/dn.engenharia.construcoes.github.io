@@ -1,0 +1,81 @@
+
+/*Fonte da Roboto 
+Regular 400 Medium 500 Bold 700 Black 900*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');*/
+
+/*Realizado a importação via css para poder alterar a fonte pq via index não acata*/
+@import url('../css/bootstrap.min.css');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Lobster', cursive;*/
+    /*background: #000;*/
+    /*font-size: 1.25rem;*/
+}
+
+/*Fundo transparente do nav e do portfolio*/
+.navbar {
+    background-color: rgba(0,0,1,0.6);
+}
+
+/*Cor no titulo do nav*/
+.navbar a{
+    color: #ffffff;
+}
+
+/*Espaçamento de letras no nav que não há classe para essa função no bootstrap*/
+.nav-item a{
+    letter-spacing: 0.05em;
+}
+
+/*Fim do icone do menu responsivo*/
+header h1{
+    font-size: calc(100% + 1.25vw);
+    text-shadow: 0.05em 0.05em 0.15em black;
+}
+
+/*Cor body*/
+.bg-black{
+    background: #000;
+}
+
+/*Redimensionamento do texto para 320px acima*/
+footer ul{
+    font-size: calc(83% + 0.01vw);
+}
+
+/*Efeitos de animação do hover*/
+/*Efeito de lentidão na volta do efeito*/
+.box, .box2{
+    transition: all linear 0.4s;
+}
+
+.box:hover{
+    transform: translateY(-15px);
+    cursor: pointer;   
+}
+
+/*Efeito de zoom no portfolio*/
+.box2:hover{
+    transition: all linear 0.5s;
+    cursor: pointer;
+    /*efeito do zoom*/
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+/*Faz o icone ficar piscando*/
+@keyframes fa-blink {
+    100% { opacity: 0; }
+}
+
+.fa-blink {
+    -webkit-animation: fa-blink .75s linear infinite;
+    -moz-animation: fa-blink .75s linear infinite;
+    -ms-animation: fa-blink .75s linear infinite;
+    -o-animation: fa-blink .75s linear infinite;
+    animation: fa-blink .75s linear infinite;
+}

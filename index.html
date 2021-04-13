@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--
+    DN - Engenharia e Construções feito com Bootstrap 5.0.0-beta2 Puro e somente "melhorei"
+    personalizei com um auto-ajuste de texto ao redimendionar a telas sem precisar 
+    criar breakpoint mais a cor preta no body, pq o dark não fez e animação de hover com lib
+    de animações scroll porque o bootstrap não faz essas animações ainda!
+-->
+
+<html lang="pt-BR">
+    <head>
+        <link rel="icon" type="imagem/jpg" href="img/logo/logotitulo.svg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/newcss.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+
+        <!--Lib de animações da AOS com scroll-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+
+        <!-- Bootstrap CSS local -->
+        <!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+
+        <!-- Bootstrap CSS CDN-->
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">-->
+
+        <!--<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">-->
+
+
+    </head>
+    <body class="text-white bg-black ">
+
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm" data-aos="fade">
+            <div class="container">
+                <a class="navbar-brand d-inline-flex text-white" href="#">
+                    <img class="me-2" 
+                         src="img/logo/logotitulo.svg" alt="Imagem da Logo" width="35" height="35"/>
+                    <p class="m-auto fw-light">DN Engenharia e Construções</p>
+
+                </a>
+
+                <button class="navbar-toggler navbar-dark shadow-lg btn-outline-warning" 
+                        type="button"
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" 
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon btn-md"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-dark fw-light" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto align-items-center justify-content-evenly">
+                        <li class="nav-item my-2">
+                            <a class="link-warning text-decoration-none me-4" aria-current="page"
+                               href="#">Início</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="link-warning text-decoration-none me-4" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="link-warning text-decoration-none me-4" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="link-warning text-decoration-none me-4" href="#obras">Obras</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="link-warning text-decoration-none me-4" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <header class="container-fluid p-0" id="inicio">
+            <div class="position-relative">
+                <img src="img/header/hero.jpg" class="card-img" alt="Imagem Hero"/>                
+                <div class="position-absolute top-50 start-50 translate-middle mt-0">
+                    <h1 class="fw-light text-warning mb-0" data-aos="fade-up" data-aos-delay="1200">Projetando</h1>
+                    <h1 class="fw-light" data-aos="fade-down" data-aos-delay="1200">a engenharia do futuro.</h1>
+                </div>                   
+            </div>
+
+        </header>
+
+        <!--Sobre-->
+        <section class="container text-white pt-5" id="sobre">
+
+            <h2 class="mt-4 pt-5 d-flex justify-content-center fw-lighter fs-5" data-aos="fade-up">
+                Sobre a Nossa Empresa
+            </h2>
+
+            <div class="row mt-5 pt-3 ">
+                <div class="col-12 col-lg-6 mb-4 px-lg-5 align-self-center" data-aos="fade" data-aos-delay="1000">
+                    <img class="img-fluid" src="img/sobre/imgPredio.jpg"  alt="Imagem do Edifício da DN Engenharia e Constuções">
+                </div>
+
+                <div class="col-12 col-lg-6 align-self-center fw-light lh-sm" data-aos="fade" data-aos-delay="1300">
+
+                    <p>A DN é uma empresa de engenharia especializada em construção de obras civis, serviços e reparos técnicos, laudos e pericias de patologia, consultorias, ensaios e avaliações de diversos tipos de materiais e gerenciamento de obras que tem como objetivo levar soluções eficazes e sustentáveis em seus serviços oferecidos.</p>
+                    <p>A DN Engenharia e Construções, acredita que a construção não é somente uma questão física, ela engloba algo muito maior, por trás de cada construção existem muitos sonhos, sacrifícios, realizações pessoais, histórias, legados e profissionais. O que requer uma enorme responsabilidade quanto aos mais altos padrões de qualidade técnica, normas e confiança envolvidos na implementação dos projetos.</p>
+                    <p>E carregamos esses valores em nossa missão inclinado com padrões de inovação, confiança e sustentabilidade nos projetos é o que torna esta marca tão viva e determinada a ser uma referência na área.</p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!--Serviços-->
+        <section class="container pt-5" id="servicos">
+
+            <h2 class="mt-4 pt-5 d-flex justify-content-center fw-lighter fs-5" data-aos="fade-up">
+                Serviços
+            </h2>
+
+            <div class="d-flex justify-content-center flex-wrap mt-5">
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-1" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-projetos.svg" alt="Imagem de Projetos do Serviços" width="30" height="30">
+                            Projetos
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Elaboração de projeto Estrutural. Análise do local, infraestrutura elaboração do projeto feita pelos engenheiros, entendendo o que pode ser feito dentro das suas expectativas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-0" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-construcao.svg" alt="Imagem de Construção do Serviços"  width="30" height="30">
+                            Construção 
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Construímos imóveis residenciais e comerciais, prédios corporativos, galpões logísticos, hospitais, universidade, pequenas a grandes edificações.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-1" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-patologias.svg" alt="Imagem de Patológias do Serviços" width="30" height="30">
+                            Patologias
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Sua obra está com defeitos, trincas, rachaduras, infiltrações e mais? Nosso objetivo é implementar os reparos necessários para alcançar total recuperação.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-0" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-fundacoes.svg" alt="Imagem de Fundações do Serviços" width="30" height="30">
+                            Fundações
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Executamos cálculos para fundações e a burocracia fica com nossa equipe, com aprovação de documentações legais, terraplanagem, fundações e superestruturas. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-1" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-concreto.svg" alt="Imagem de Concreto do Serviços" width="30" height="30">
+                            Concreto
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Trabalhamos com concreto armado, concreto protendido, concreto pré-moldado, Alvenaria estrutural sempre pensando na segurança e estética da sua obra.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-0" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-eletrica.svg" alt="Imagem de Eletrica do Serviços" width="30" height="30">
+                            Elétrica
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Efetuamos instalações e distribuição de energia, iluminação, aterramento e mais projetos complexos para indústria, prédios e residências.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-1" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-laudos.svg" alt="Imagem de Laudos do Serviços" width="30" height="30">
+                            Laudos
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Elaboração, apresentação de laudos/parecer técnicos de patologia, pericias e aprovação do projeto na planta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-0" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-regularizacao.svg" alt="Imagem de Regularização do Serviços" width="30" height="30">
+                            Regularização
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Elaboração de processo para obtenção certificado de regularização de imóveis junto a prefeitura municipal competente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-1" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-estruturas.svg" alt="Imagem de Estruturas do Serviços" width="30" height="30">
+                            Estruturas
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Implementamos sua estrutura metálica com telhas de policarbonato, aço galvanizado, telhas térmicas e acústicas, cobertura industriais, residenciais e mezaninos. Com as melhores técnicas e profissionais capacitados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-auto m-lg-4 m-sm-1 mx-0" data-aos="flip-left" data-aos-delay="800">
+                    <div class="card border-warning mb-3 rounded-0 box" style="max-width: 10.7rem;">
+                        <div class="card-header bg-warning text-dark fw-bold rounded-0">
+                            <img class="" src="img/servicos/icon-alvaras.svg" alt="Imagem de Alvarás do Serviços" width="30" height="30">
+                            Alvarás
+                        </div>
+                        <div class="card-body bg-black text-white">
+                            <p class="card-text fw-light lh-sm">
+                                Aprovações de projetos comerciais e residências, projetos de arquitetura, acesso, bombeiro e de infraestrutura civil (Órgãos Públicos e Concessionárias).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--Portfolio-->
+        <section class="container pt-5" id="obras">
+
+            <h2 class="mt-4 pt-5 d-flex justify-content-center fw-lighter fs-5" data-aos="fade-up">
+                Nosso Portfólio de Obras e Projetos
+            </h2>
+
+            <div class="pb-5 pb-md-5" data-aos="zoom-in">
+
+                <!--Linha 1-->
+                <div class="row g-0 mb-0 mt-5">
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-primary box2 rounded-0 ">
+                            <img src="img/portfolio/img_1.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Construções Residênciais</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-secondary box2 rounded-0 ">
+                            <img src="img/portfolio/img_2.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Fundações</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-primary box2 rounded-0 ">
+                            <img src="img/portfolio/img_3.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Construções de Galpões</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-secondary box2 rounded-0 ">
+                            <img src="img/portfolio/img_4.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Terraplanagens</h6>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                <!--linha 2-->
+                <div class="row g-0 mb-0">
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-primary box2 rounded-0 ">
+                            <img src="img/portfolio/img_5.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Coberturas</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-secondary box2 rounded-0 ">
+                            <img src="img/portfolio/img_6.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Patologia</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-primary box2 rounded-0 ">
+                            <img src="img/portfolio/img_7.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Elétrica</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-secondary box2 rounded-0 ">
+                            <img src="img/portfolio/img_8.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Regularizações</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--linha 3-->
+                <div class="row g-0 mb-0">
+                    <div class="col-6 col-sm-6 col-md-3 rounded-0 border-0">
+                        <div class="ratio ratio-4x3 bg-primary box2 rounded-0 ">
+                            <img src="img/portfolio/img_9.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Projetos / Plantas</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-secondary box2 rounded-0 ">
+                            <img src="img/portfolio/img_10.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Estruturas Metálicas</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-primary box2 rounded-0 ">
+                            <img src="img/portfolio/img_11.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Pinturas</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="ratio ratio-4x3 bg-secondary box2 rounded-0 ">
+                            <img src="img/portfolio/img_12.jpg">
+                            <div class="d-flex justify-content-start align-items-end" data-aos="fade" data-aos-delay="1500">
+                                <h6 class="p-1 fw-light text-warning navbar">Alvarás</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--Contato-->
+        <section class="container pt-5" id="contato">
+
+            <h2 class="mt-4 pt-lg-5 d-flex justify-content-center fw-lighter fs-5" data-aos="fade-up">
+                Contato
+            </h2>
+
+
+            <div class="pb-5">
+
+                <div class="d-flex justify-content-evenly flex-wrap">
+
+                    <div class="col-sm-auto" data-aos="fade-up" data-aos-delay="900">
+                        <h2 class="mt-3 pt-4 pb-2 fw-light fs-3">
+                            Precisa de um<br>projeto ou orçamento?
+                        </h2>
+
+                        <h2 class="fw-light fs-5 text-warning">
+                            Fale com a gente!
+                        </h2>
+
+                        <!--Card grupo-->
+                        <div class="card p-3 card-group mt-4 mb-5 rounded-0">
+
+                            <!--campo nome-->
+                            <div class="row-cols">
+                                <div class="form-floating mb-3 text-muted">
+                                    <input type="text" class="form-control rounded-0" id="inputName" placeholder="name">
+                                    <label for="inputName">Nome Completo</label>
+                                </div>
+
+                                <!--Linha com duas colunas-->
+                                <div class="row g-3">
+
+                                    <!--campo empresa-->
+                                    <div class="col-sm-6">
+                                        <div class="form-floating mb-3 text-muted">
+                                            <input type="text" class="form-control rounded-0" id="inputCompany" placeholder="name">
+                                            <label for="inputCompany">Empresa</label>
+                                        </div>
+                                    </div>
+
+                                    <!--campo telefone-->
+                                    <div class="col-sm-6">
+                                        <div class="form-floating mb-3 text-muted">
+                                            <input type="text" class="form-control rounded-0" id="inputNumber" placeholder="telefone">
+                                            <label for="inputNumber">Telefone</label>
+                                        </div>
+                                    </div>   
+
+                                </div>   
+
+                                <!--campo email-->
+                                <div class="col">
+                                    <div class="form-floating mb-3 text-muted">
+                                        <input type="email" class="form-control rounded-0" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email</label>
+                                    </div>
+                                </div>  
+
+                                <!--text area-->
+                                <div class="row-cols-1 text-muted">
+                                    <div class="form-floating">
+                                        <textarea class="form-control rounded-0 p-5" placeholder="mensagem" id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Mensagem</label>
+                                    </div>
+                                </div>
+
+                                <!--botão-->
+                                <div class="d-grid pt-3">
+                                    <button type="submit" class="btn btn-dark fw-light rounded-0">Enviar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Mapa localização do endereço-->                    
+                    <div class="row-sm-auto pt-sm-5 mx-lg-3 maps d-flex justify-content-sm-center align-content-sm-center img-fluid" data-aos="fade-down" data-aos-delay="1500">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0706195871576!2d-46.65102668668705!3d-23.56590703594019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5997d7cf0ec5%3A0x3e42a2cb54041f20!2sAv.%20Paulista%2C%20854%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1615395468070!5m2!1spt-BR!2sbr" width="450" height="530" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="container-fluid d-flex justify-content-end p-2">
+            <a href="#">
+                <button type="button" class="navbar-toggler navbar-dark shadow-lg btn-outline-warning text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-compact-up fa-blink" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
+                    </svg>
+                </button>
+            </a> 
+        </div>
+
+        <footer class="container-fluid bg-warning py-1 fw-normal" data-aos="fade">
+
+            <div class="row pt-sm-3 ">
+
+                <div class="col-12 col-lg d-flex align-items-center justify-content-center">
+                    <a class="d-flex pt-3 pb-3 text-decoration-none" href="#">
+                        <img class="me-2" 
+                             src="img/logo/logo.svg" alt="Imagem da Logo" width="40" height="40"/>
+                        <p class="m-auto text-dark">DN Engenharia e Construções</p>
+
+                    </a>
+                </div>
+
+                <!--Redes sociais-->
+                <div class="col-12 col-lg d-flex align-items-center justify-content-center">
+                    <div class="text-dark">
+                        <ul class="list-unstyled">
+                            <li>
+                                <img class="me-2" 
+                                     src="img/footer/iconfacebook.svg" alt="Imagem da logo do facebook" width="30" height="30"/>
+                                dn.engenharia.construcoes
+                            </li>
+                            <li>
+                                <img class="me-2 mt-2" 
+                                     src="img/footer/icontwitter.svg" alt="Imagem da logo do twitter" width="30" height="30"/>
+                                @dn.engenharia.construcoes
+                            </li>                                                  
+                            <li>
+                                <img class="me-2 mt-2" 
+                                     src="img/footer/iconinstagram.svg" alt="Imagem da logo do instragam" width="30" height="30"/>
+                                dn.engenharia.construcoes
+                            </li>                           
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg d-flex align-items-center justify-content-center">
+                    <div class="text-dark">
+                        <ul class="list-unstyled">
+                            <li>
+                                <img class="me-2" 
+                                     src="img/footer/iconphone.svg" alt="Imagem de Telefone" width="30" height="30"/>
+                                (11) 1111-1111
+                                <!--Quebrando o li deles para unir na mesma linha-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <img class="mx-2 me-2" 
+                                     src="img/footer/iconwhatsapp.svg" alt="Imagem de Whatsapp" width="30" height="30"/>
+                                (11) 91111-1111
+                            </li>
+                            <li>
+                                <img class="me-2 pt-1" 
+                                     src="img/footer/iconenvelope.svg" alt="Imagem de Email" width="30" height="30"/>
+                                dn.engenharia.construcoes@gmail.com
+                            </li>
+                            <li>
+                                <img class="me-2 pt-1" 
+                                     src="img/footer/iconmap.svg" alt="Imagem de Localização" width="30" height="30"/>
+                                Av. Paulista, 854 - Bela Vista, São Paulo - SP
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lh-sm pt-3 pb-1">
+                <ul class="list-unstyled">
+                    <li>
+                        <p class="text-dark text-center">DN &copy; 2021 - Todos os direitos reservados.<br>
+                            Desenvolvido por: Daniel Nascimento
+                        </p>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </footer>
+
+
+
+
+
+
+
+        <!--<script src="js/newjavascript.js"></script>-->
+        <!--O js do Bootstrap usar via CDN ou local os dois habilitado da conflito-->
+        <!--Js Bootstrap local-->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- CDN do Js Bootstrap + Bundle + Popper agrupado -->
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>-->
+
+        <!-- CDN do Js Bootstrap + Bundle + Popper separados -->
+        <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>-->
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>-->
+
+        <!--Script do AOS aminação-->
+        <script src ="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+
+        <!--Se quizer usar com tempo de retardo-->
+        <script src ="js/aos.js"></script>
+
+    </body>
+</html>
+
+<!--
+
+Para alterar a fonte tem que desativar o bootstrap.min.css 
+da local e cdn da index e realizar um import no css 
+para o css do bootstrap local receber a alteração da fonte 
+não sei pq isso ainda!!
+
+
+
+-->

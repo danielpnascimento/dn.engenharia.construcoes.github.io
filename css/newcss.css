@@ -3,18 +3,13 @@
 Regular 400 Medium 500 Bold 700 Black 900*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-/*@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');*/
-
-/*Realizado a importação via css para poder alterar a fonte pq via index não acata*/
+/*Realizado a importação via css para poder alterar a fonte pq via index não acata com o bootstrap*/
 @import url('../css/bootstrap.min.css');
 
 
 body{
     font-family: 'Roboto', sans-serif;
-    /*font-family: 'Lobster', cursive;*/
-    /*background: #000;*/
-    /*font-size: 1.25rem;*/
-}
+  }
 
 /*Fundo transparente do nav e do portfolio*/
 .navbar {
@@ -47,12 +42,12 @@ footer ul{
     font-size: calc(83% + 0.01vw);
 }
 
-/*Efeitos de animação do hover*/
 /*Efeito de lentidão na volta do efeito*/
 .box, .box2{
     transition: all linear 0.4s;
 }
 
+/*Efeitos de animação do hover*/
 .box:hover{
     transform: translateY(-15px);
     cursor: pointer;   

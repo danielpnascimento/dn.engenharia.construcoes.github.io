@@ -49,7 +49,7 @@ header h1{
 
 /*Auto ajuste para o legendas dos cards do portfolio*/
 .ratio h6{
-    font-size: calc(85% + 0.1vw);
+    font-size: calc(83% + 0.1vw);
 }
 
 footer ul{

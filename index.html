@@ -417,8 +417,8 @@
 				<form name="contact" method="POST" data-netlify="true">
 
                                 <div class="form-floating mb-3 text-muted">
-                                    <input type="text" class="form-control rounded-0" id="inputName" placeholder="name">
-                                    <label for="inputName">Nome Completo</label>
+                                     <input type="text" class="form-control rounded-0" id="inputName" name="name" placeholder="Nome">
+                                       <label for="inputName">Nome Completo</label>
                                 </div>
 
                                 <!--Linha com duas colunas-->
@@ -427,16 +427,16 @@
                                     <!--campo empresa-->
                                     <div class="col-sm-6">
                                         <div class="form-floating mb-3 text-muted">
-                                            <input type="text" class="form-control rounded-0" id="inputCompany" placeholder="name">
-                                            <label for="inputCompany">Empresa</label>
+                                           <input type="text" class="form-control rounded-0" id="inputCompany" name="name" placeholder="Nome">
+                                               <label for="inputCompany">Empresa</label>
                                         </div>
                                     </div>
 
                                     <!--campo telefone-->
                                     <div class="col-sm-6">
                                         <div class="form-floating mb-3 text-muted">
-                                            <input type="text" class="form-control rounded-0" id="inputNumber" placeholder="telefone">
-                                            <label for="inputNumber">Telefone</label>
+                                             <input type="text" class="form-control rounded-0" id="inputNumber" name="phone" placeholder="Phone">
+                                               <label for="inputNumber">Telefone</label>
                                         </div>
                                     </div>   
 
@@ -445,21 +445,21 @@
                                 <!--campo email-->
                                 <div class="col">
                                     <div class="form-floating mb-3 text-muted">
-                                        <input type="email" class="form-control rounded-0" id="floatingInput" placeholder="name@example.com">
-                                        <label for="floatingInput">Email</label>
+                                       <input type="email" class="form-control rounded-0" id="floatingInput" name="email" placeholder="Email">
+                                            <label for="floatingInput">Email</label>
                                     </div>
                                 </div>  
 
                                 <!--text area-->
                                 <div class="row-cols-1 text-muted">
                                     <div class="form-floating">
-                                        <textarea class="form-control rounded-0 p-5" placeholder="mensagem" id="floatingTextarea"></textarea>
-                                        <label for="floatingTextarea">Mensagem</label>
+                                       <textarea class="form-control rounded-0 p-5" name="message" placeholder="Mensagem" id="floatingTextarea"></textarea>
+				       <label for="floatingTextarea">Mensagem</label>
                                     </div>
                                 </div>
 
                                 <!--botão-->
-                                <div class="d-grid pt-3">
+                                <div class="d-grid pt-3 actions">
                                     <button type="submit" class="btn btn-dark fw-light rounded-0">Enviar</button>
                                 </div>
 				

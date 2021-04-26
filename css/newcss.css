@@ -3,13 +3,18 @@
 Regular 400 Medium 500 Bold 700 Black 900*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-/*Realizado a importação via css para poder alterar a fonte pq via index não acata com o bootstrap*/
+/*@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');*/
+
+/*Realizado a importação via css para poder alterar a fonte pq via index não acata*/
 @import url('../css/bootstrap.min.css');
 
 
 body{
     font-family: 'Roboto', sans-serif;
-  }
+    /*font-family: 'Lobster', cursive;*/
+    /*background: #000;*/
+    /*font-size: 1.25rem;*/
+}
 
 /*Fundo transparente do nav e do portfolio*/
 .navbar {
@@ -44,7 +49,7 @@ header h1{
 
 /*Auto ajuste para o texto dos cards do serviços*/
 .card-body p{
-    font-size: calc(90% + 0.1vw);
+    font-size: calc(88% + 0.1vw);
 }
 
 /*Auto ajuste para o legendas dos cards do portfolio*/
@@ -52,6 +57,7 @@ header h1{
     font-size: calc(80% + 0.1vw);
 }
 
+/*Redimensionamento do texto para 320px acima*/
 footer ul{
     font-size: calc(83% + 0.01vw);
 }

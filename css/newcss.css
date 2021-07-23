@@ -5,15 +5,12 @@ Regular 400 Medium 500 Bold 700 Black 900*/
 
 /*@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');*/
 
-/*Realizado a importa√ß√£o via css para poder alterar a fonte pq via index n√£o acata*/
+/*Realizado a importaÁ„o via css para poder alterar a fonte pq via index n„o acata*/
 @import url('../css/bootstrap.min.css');
 
 
 body{
     font-family: 'Roboto', sans-serif;
-    /*font-family: 'Lobster', cursive;*/
-    /*background: #000;*/
-    /*font-size: 1.25rem;*/
 }
 
 /*Fundo transparente do nav e do portfolio*/
@@ -26,7 +23,7 @@ body{
     color: #ffffff;
 }
 
-/*Espa√ßamento de letras no nav que n√£o h√° classe para essa fun√ß√£o no bootstrap*/
+/*EspaÁamento de letras no nav que n„o ha classe para essa funÁ„o no bootstrap*/
 .nav-item a{
     letter-spacing: 0.05em;
 }
@@ -42,12 +39,12 @@ header h1{
     background: #000;
 }
 
-/*Auto ajuste para o titulos dos cards do servi√ßos*/
+/*Auto ajuste para o titulos dos cards do serviÁos*/
 .card-header {
     font-size: calc(78% + 0.1vw);
 }
 
-/*Auto ajuste para o texto dos cards do servi√ßos*/
+/*Auto ajuste para o texto dos cards do serviÁos*/
 .card-body p{
     font-size: calc(88% + 0.1vw);
 }
@@ -62,12 +59,12 @@ footer ul{
     font-size: calc(83% + 0.01vw);
 }
 
-/*Efeito de lentid√£o na volta do efeito*/
+/*Efeito de lentid„o na volta do efeito*/
 .box, .box2{
     transition: all linear 0.4s;
 }
 
-/*Efeitos de anima√ß√£o do hover*/
+/*Efeitos de animaÁ„o do hover*/
 .box:hover{
     transform: translateY(-15px);
     cursor: pointer;   
@@ -93,4 +90,95 @@ footer ul{
     -ms-animation: fa-blink .75s linear infinite;
     -o-animation: fa-blink .75s linear infinite;
     animation: fa-blink .75s linear infinite;
+}
+
+/*///Icone de prÈ carregamento da pagina e adcionado um js para desativaÁ„o\\\*/
+
+#loader{
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#load {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFC107;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#load:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFC107;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#load:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFC107;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }

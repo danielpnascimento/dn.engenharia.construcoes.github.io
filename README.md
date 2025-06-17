@@ -10,7 +10,7 @@ Desenvolvi esse Site de Engenharia com Bootstrap 5.0.0 beta 2 Puro, com uma lib 
 
 E o resultado de forma puro, ficou satisfátorio como imaginei de início sendo simples, funcional, elegante, intuitivo, sendo direto com o objetivo e responsivo para qualquer tela!
 
-E estando pronto para novas imprementações!!
+E estando pronto para novas implementações!!
 
 
 ## RECURSOS E FUNCIONALIDADES:
